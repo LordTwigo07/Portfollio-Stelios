@@ -2,7 +2,7 @@
     text-decoration: none;
 }
 body{
-    background-color: rgb(33, 31, 31);
+    background: url(background.jpg);
     color: white;
     margin: 0;
     padding: 0;
@@ -16,11 +16,13 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(30, 27, 27);
     color: white;
     text-decoration: none;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-    height : 20vh
+    height : 10vh;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
 }
 .navbar li{
     display: inline-block;
@@ -43,7 +45,7 @@ main{
     transition: all 0.3s ease;
 }
 .navbar h1{
-    margin-left: 2vw;
+    margin-left: 100px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
@@ -55,6 +57,7 @@ main{
     margin: 50px 0;
     height: 70vh;
     border: none;
+    
    
 }
 .about-me h3{
@@ -75,8 +78,9 @@ main{
     flex-shrink: 0;
 }
 .about-me-button-link{
-    color: white;
+    color:red;
     margin-bottom: 20px;
+    margin-top : 20px;
 }
 .about-me-button{
     display: flex;
@@ -85,37 +89,104 @@ main{
     margin-top: 20px;
     gap: 20px;
 }
+.hire-button{
+    width: 250px;
+    background-color: #e54c21;
+    color: white;
+    height: 50px;
+    margin-top: 50px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 22px;
+}
+.hire-button:hover{
+background-color: #e54b219a;
+transition: .5s ease;
+}
 
 .profile-image {
     max-width: 300px;
     height: auto;
     object-fit: cover;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); 
-    box-shadow: 
-        0 10px 20px rgba(0, 0, 0, 0.2);
-    transform: rotate(-5deg);
-    transition: all 0.3s ease;
+    border-radius: 50%;
+}
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    height: 100vh;
 }
 
-.profile-image:hover {
-    box-shadow:  0 15px 30px rgba(0, 0, 0, 0.3);
+.skills-section {
+    max-width: 800px;
+    margin: 0 auto;
 }
-.skills-section{
-    margin-left: 0;
-    margin-right: 0;
+
+.skills-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.skills-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skills-content p {
+    display: flex;
+    align-items: flex-start;
     padding: 20px;
-    width: 100vw;
-    box-sizing: border-box;
-    background-color: rgb(38, 35, 35);
-    height:50vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    color: white;
+    font-size: 1em;
 }
+
+.skills-content p i {
+    font-size: 2em;
+    color: #e54c21;
+    margin-right: 15px;
+}
+.skills-title span{
+    font-size: 30px;
+    font-weight: 400;
+    color: red;
+}
+
+.skills-content .css i {
+    color: #2965f1;
+}
+
+.skills-content p strong {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
 
 #projects{
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 100px;
+    margin-top: 100px;
+}
+#projects img{
+    width: 230px;
 }
 .projects-section {
     padding: 4rem 2rem;
-    background-color: rgb(33, 31, 31);
+    background-color: black;
 }
 
 .projects-section h3 {
@@ -135,11 +206,13 @@ main{
 }
 
 .project-card {
-    background: rgb(30, 27, 27);
+    background-color: red;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     transition: transform 0.3s ease;
+    background-color: black;
+    margin-top: 20px;
 }
 
 .project-card:hover {
@@ -183,10 +256,16 @@ main{
     transition: all 0.3s ease;
     
 }
+#projects h1{
+    font-size: 22px;
+    color: #e54c21;
+    margin-bottom: 100px;
+}
 
 .project-button:hover {
     background: #555;
     transform: translateY(-2px);
+    color: #e54c21;
 }
 
 
