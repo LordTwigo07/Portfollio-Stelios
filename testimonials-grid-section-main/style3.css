@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;700&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --gray: hsl(0, 0%, 81%);
+    --White: hsl(0, 0%, 100%);
+    --grayish-blue: hsl(210, 46%, 95%);
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: var(--grayish-blue);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+p {
+    font-size: 19px;
+    color: var(--gray);
+    opacity: 70%;
+}
+
+.container {
+    display: flex;
+    padding: 1em 10%;  
+    margin-top: 25px;
+    justify-content: space-between;
+    overflow: hidden;
+    max-height: 100vh;
+}
+
+.testimonials {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.testimonials-big {
+    position: relative;
+    background-color: var(--Moderate-violet);
+    padding-bottom: 1.5em;
+    width: 68%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 1.5em;
+}
+
+.info {
+    display: flex;
+}
+
+.info .img {
+    width: 35px;
+    margin-right: 0.5rem;
+}
+
+.info .img img {
+    width: 100%;
+    border-radius: 50%;
+}
+.name{
+    color: white;
+}
+.name h3{
+    font-size: 15px;
+}
+.name p{
+    color: white;
+    font-size: 10px;
+    opacity: 50%;
+}
+.view .bold{
+    margin: 13px 0;
+    font-weight: 600;
+    color: white;
+}
+
+
+.testimonials-small{
+    background-color: var(--Very-dark-grayish-blue);
+    width: 30%;
+    border-radius: 10px;
+    padding: 1.5em;
+    margin-bottom: 10px;
+}
+.white{
+    background-color: white;
+}
+.testim-Kira{
+    background-color: white;
+    color: black;
+    width: 25%;
+    border-radius: 10px;
+    padding: 1.5em;
+    
+
+}
+.white,
+.white .name,
+.white p,
+.white.name p,
+.white .view .bold{
+    color: black;
+    
+
+}
+.testimonials-small.white {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15) !important;
+}
+
+.testim-Kira {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15) !important;
+}
+
+
+@media(max-width:1024px){
+    .testimonials-big{
+        width: 60%;
+    }
+    .testimonials-small{
+        width: 38%;
+    }
+}
+@media (max-width:843px){
+    .container{
+        flex-direction: column;
+    }
+    .testimon-Kira,
+    .testimonials{
+        width: 100%;
+    }
+}
+@media(max-width:650px){
+    .container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 3em;
+    }
+    .testimonials{
+        width:100%;
+        flex-direction: column;
+    }
+    .testimonials-big,
+    .testimonials-small,
+    .testim-Kira{
+        width: 100%;
+    }
+}
